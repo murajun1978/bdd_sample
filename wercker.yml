@@ -11,7 +11,7 @@ build:
     # The steps that will be executed on build
     steps:
         # A step that executes `bundle install` command
-        - bundle-install --standalone wercker
+        - bundle-install
         # A step that prepares the database.yml using the database in services
         #- rails-database-yml
         # A custom script step, name value is used in the UI
