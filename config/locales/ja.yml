@@ -1,0 +1,15 @@
+ja:
+  activerecord:
+    attributes:
+      project:
+        name: 'プロジェクト名'
+  helpers:
+    submit:
+      create: '登録'
+  title:
+    index: 'プロジェクト一覧'
+    new: 'プロジェクト新規作成'
+    show: 'プロジェクト詳細'
+  button: 
+    create: '新規作成'  
+    back: '戻る'
