@@ -22,6 +22,8 @@ build:
                 echo "ruby version $(ruby --version) running"
                 echo "from location $(which ruby)"
                 echo -p "gem list: $(gem list)"
+            name: turnip
+            code: bundle exec rspec -r turnip/rspec
         # Add more steps here:
         # - script:
         #        name: rspec
