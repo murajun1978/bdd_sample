@@ -24,5 +24,9 @@ build:
                 echo -p "gem list: $(gem list)"
         # Add more steps here:
         - script:
-               name: rspec
-               code: bundle exec rspec
+            name: Set up db
+            code: bundle exec rake db:schema:load RAILS_ENV=test
+
+        - script:
+            name: rspec
+            code: bundle exec rspec
