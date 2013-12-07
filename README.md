@@ -1,4 +1,5 @@
 == README
+[![wercker status](https://app.wercker.com/status/c38f3758796a206918a4b3296b668518/m "wercker status")](https://app.wercker.com/project/bykey/c38f3758796a206918a4b3296b668518)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
