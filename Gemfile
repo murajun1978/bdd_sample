@@ -4,8 +4,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-gem 'pg', group: :wercker
+gem 'sqlite3', group: :development
+gem 'pg', group: :production
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -33,7 +33,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :development, :test, :wercker do 
+group :development, :test do 
   gem 'rspec-rails'
   gem 'factory_girl_rails'
 
@@ -47,7 +47,7 @@ group :development, :test, :wercker do
   gem 'awesome_print'
 end
 
-group :test, :wercker do
+group :test do
   gem 'fuubar'
   gem 'database_rewinder'
   gem 'turnip'
