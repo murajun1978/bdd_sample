@@ -14,6 +14,8 @@ build:
         - bundle-install
         # A step that prepares the database.yml using the database in services
         #- rails-database-yml
+        - rails-database-yml:
+            service: postgresql
         # A custom script step, name value is used in the UI
         # and the code value contains the command that get executed
         - script:
@@ -25,7 +27,7 @@ build:
         # Add more steps here:
         - script:
             name: Set up db
-            code: bundle exec rake db:migrate RAILS_ENV=test
+            code: bundle exec rake db:schema:load RAILS_ENV=test
 
         - script:
             name: rspec
